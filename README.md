@@ -30,7 +30,7 @@ You can also use Scene 2 UWMF to create levels for:
 (UWMF)](https://maniacsvault.net/ecwolf/wiki/Universal_Wolfenstein_Map_Format)
 This allows you to:
 	- easily assign any texture to any side of any tile.
-	- easily create tiles with single-color or invisible textures.
+	- easily create tiles with single-color textures.
 	- create [things] that have fractional coordinates.
 - If you already know how to use Godot, then learning how to use Scene 2 UWMF
 will be easy.
