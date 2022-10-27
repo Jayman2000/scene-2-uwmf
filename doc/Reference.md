@@ -1,7 +1,5 @@
 # Reference for Scenes and Scripts Included with Scene 2 UWMF
 
-WIP: This document is missing a some stuff at the moment.
-
 ## Glossary
 
 - **map pixel** — the absolute unit used by [UWMF]. Anything in a UWMF map can
@@ -86,6 +84,29 @@ You probably shouldn’t use one of these. For one thing, they aren’t
 actually invisible. I called them that and later realized that they
 actually cause [the hall of mirrors effect]. In the future, they’ll be
 renamed.
+
+## Custom UWMF properties
+
+Many of the scenes that you’ll build maps with have a property named
+“Custom Uwmf Properties”. That property is a [`Dictionary`]. You can use
+it to access features of UWMF that Scene 2 UWMF doesn’t support yet.
+
+For example, [according to the UWMF spec, tiles can have a property named
+`comment`][UWMF comment]. The Tile scene doesn’t have a property that
+corresponds to UWMF’s `comment` property. If you want to create a tile
+that has a `comment`, then here’s what you can do:
+
+1. Create a Tile.
+2. Select it.
+3. In the [Inspector][editor vocab], find the property named
+Uwmf Properties”.
+4. Click on “Dictionary (size 0)”.
+5. Set “New Key” to a `String` that says “comment”. Every custom
+property key should be a `String`.
+6. Set “New Value” to a `String` that says anything. [According the
+UWMF spec, `string` is the data type for `comment`.][UWMF comment] Other
+properties may use other data types.
+7. Click “Add Key/Value Pair”.
 
 ## Scenes used to build levels
 
@@ -209,6 +230,8 @@ you’re putting the Trigger in the same space as a green Tile.
 [action special]: https://maniacsvault.net/ecwolf/wiki/Action_specials
 [Actor properties rendering]: https://maniacsvault.net/ecwolf/wiki/Actor_properties#Rendering
 [Actor states usage]: https://maniacsvault.net/ecwolf/wiki/Actor_states#Usage
+[`Dictionary`]: https://docs.godotengine.org/en/3.4/classes/class_dictionary.html
+[editor vocab]: https://docs.godotengine.org/en/3.4/community/contributing/docs_writing_guidelines.html#common-vocabulary-to-use-in-godot-s-documentation
 [fake contrast]: https://doomwiki.org/wiki/Fake_contrast#Previous_implementations
 [global properties]: https://maniacsvault.net/ecwolf/wiki/Universal_Wolfenstein_Map_Format#Global_Properties
 [map header]: https://zdoom.org/wiki/Universal_Doom_Map_Format#Map_lumps
@@ -217,5 +240,6 @@ you’re putting the Trigger in the same space as a green Tile.
 [`TEXTURES` lump]: https://maniacsvault.net/ecwolf/wiki/TEXTURES
 [the hall of mirrors effect]: https://doomwiki.org/wiki/Hall_of_mirrors
 [UWMF]: https://maniacsvault.net/ecwolf/wiki/Universal_Wolfenstein_Map_Format
+[UWMF comment]: https://maniacsvault.net/ecwolf/wiki/UWMF#Optional_Properties
 [WAD]: https://doomwiki.org/wiki/WAD
 [WAD directory]: https://doomwiki.org/wiki/WAD#Directory
