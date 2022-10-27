@@ -39,6 +39,7 @@ will be easy.
 
 - You can’t create these fundamental level components:
 	- Doors
+	- Sound zones
 	- Pushwalls
 	- Standard level exits (you have to create a boss that will end the
 	level, a [Spear of Destiny][SOD item] or a trigger that activates
