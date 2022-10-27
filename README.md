@@ -37,6 +37,7 @@ will be easy.
 
 ## Disadvantages of using Scene 2 UWMF
 
+- The documentation is lacking.
 - You can’t import a level created with another editor. You have to
 create a new one from scratch.
 - You can’t create these fundamental level components:
