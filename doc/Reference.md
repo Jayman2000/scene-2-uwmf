@@ -82,10 +82,10 @@ texture and edit its one and only property: `color`
 
 ### `InvisibleTexture`
 
-An `InvisibleTexture` can be created using any `Texture` property’s drop-down
-menu. Make sure that there’s something visible behind one of these, or else it
-will cause
-[the hall of mirrors effect].
+You probably shouldn’t use one of these. For one thing, they aren’t
+actually invisible. I called them that and later realized that they
+actually cause [the hall of mirrors effect]. In the future, they’ll be
+renamed.
 
 ## Scenes used to build levels
 
