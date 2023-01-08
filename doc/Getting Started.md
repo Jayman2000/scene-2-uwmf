@@ -26,9 +26,7 @@ game.](https://maniacsvault.net/ecwolf/wiki/Game_data)
 
 ## 2. Make sure that you have a compatible version of [Godot]
 
-Please use [Godot v3.4.4](https://downloads.tuxfamily.org/godotengine/3.4.4/).
-I’ll start supporting the latest stable version of Godot once it’s in a stable
-version of [nixpkgs](https://github.com/NixOS/nixpkgs).
+Please use [Godot v3.5.1](https://downloads.tuxfamily.org/godotengine/3.5.1/).
 
 ## 3. Set up a Git repo for your maps
 
