@@ -182,7 +182,7 @@ The Play Scene button looks like a clapperboard with a triangle on it.
 2. A new window will appear. Once Scene 2 UWMF has finished generating a WAD
 file for your map, that window will turn gray. Once the window is gray, close
 out of it.
-3. In [Godot’s main menus][editor vocab], click “Project” then “Open Project
+3. In [Godot’s main menus][editor vocab], click “Project” then “Open User
 Data Folder”.
 4. In your file manager, you should see a file named “MAP01.WAD”. You can now
 load that map in your source port and test it out. If you’re using ECWolf, then
