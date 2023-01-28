@@ -31,19 +31,22 @@ Please use [Godot v3.5.1](https://downloads.tuxfamily.org/godotengine/3.5.1/).
 ## 3. Set up a Git repo for your maps
 
 1. Make sure that you have [Git](https://git-scm.com/) installed.
-2. Create a local copy of the Scene 2 UWMF repo:
+2. Open a terminal emulator. You’ll need to enter the commands for the next
+steps into a terminal. If you’re running Windows, make sure that you open a Git
+CMD or Git Bash window.
+3. Create a local copy of the Scene 2 UWMF repo:
 
 		git clone <URL>
 
-3. Change directory into your clone of the Scene 2 UWMF repo:
+4. Change directory into your clone of the Scene 2 UWMF repo:
 
 		cd scene-2-uwmf
 
-4. Set up any submodules:
+5. Set up any submodules:
 
 		git submodule update --init --recursive
 
-5. _(Recommended)_ Use a separate branch for your changes:
+6. _(Recommended)_ Use a separate branch for your changes:
 
 	1. Create the branch:
 
