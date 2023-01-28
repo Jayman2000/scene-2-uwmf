@@ -36,7 +36,7 @@ steps into a terminal. If you’re running Windows, make sure that you open a Gi
 CMD or Git Bash window.
 3. Create a local copy of the Scene 2 UWMF repo:
 
-		git clone <URL>
+		git clone https://jasonyundt.website/git/scene-2-uwmf
 
 4. Change directory into your clone of the Scene 2 UWMF repo:
 
