@@ -25,7 +25,9 @@ size = Vector2( 1, 1 )
 script = ExtResource( 2 )
 color = Color( 0.729412, 1, 1, 1 )
 
-[node name="BaseMap" instance=ExtResource( 1 )]
+[node name="Map2" instance=ExtResource( 1 )]
+internal_name = "MAP02"
+automap_name = "MAP02"
 default_sector/texture_ceiling = SubResource( 2 )
 default_sector/texture_floor = ExtResource( 10 )
 api_version = 1
