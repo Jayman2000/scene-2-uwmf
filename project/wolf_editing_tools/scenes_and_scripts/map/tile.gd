@@ -1,15 +1,21 @@
 tool
 extends MapSpotLockedObject
 
+const DEFAULT_EXPLICIT_TAG_ENABLED := false
+const DEFAULT_EXPLICIT_TAG_NUMBER := 0
 const EAST_FACE_PATH := @"EastFace"
 const OVERHEAD_FACE_PATH := @"OverheadFace"
 const BOTTOM_FACE_PATH := @"BottomFace"
+const WRONG_TYPE := "Tried to set {} to {} which is not {}."
 
 export var texture_east : Texture setget set_texture_east
 export var texture_north : Texture setget set_texture_north
 export var texture_south : Texture setget set_texture_south
 export var texture_west : Texture setget set_texture_west
 export var texture_overhead : Texture setget set_texture_overhead
+
+var explicit_tag_enabled : bool = DEFAULT_EXPLICIT_TAG_ENABLED
+var explicit_tag_number : int = DEFAULT_EXPLICIT_TAG_NUMBER
 
 
 func get_mesh_instance(path : NodePath): #-> MeshInstance:  # Doesn’t work.
@@ -98,3 +104,62 @@ func uwmf_position() -> Vector3:
 
 func max_uwmf_x_y_z() -> Vector3:
 	return uwmf_position() + Vector3(1, 1, 1)
+
+
+func _get_property_list() -> Array:
+	return [
+		{
+			"name" : "explict_tag/enabled",
+			"type" : TYPE_BOOL
+		},
+		{
+			"name" : "explict_tag/number",
+			"type" : TYPE_INT
+		}
+	]
+
+
+func _get(property):
+	match property:
+		"explict_tag/enabled":
+			return explicit_tag_enabled
+		"explict_tag/number":
+			return explicit_tag_number
+	return null
+
+
+func _set(property, value) -> bool:
+	match property:
+		"explict_tag/enabled":
+			if value is bool:
+				explicit_tag_enabled = value
+				return true
+			else:
+				push_error(WRONG_TYPE % ["explict_tag/enabled", value, "a bool"])
+		"explict_tag/number":
+			if value is int:
+				explicit_tag_number = value
+				return true
+			else:
+				push_error(WRONG_TYPE % ["explict_tag/number", value, "an int"])
+	return false
+
+
+func property_can_revert(name) -> bool:
+	match name:
+		"explict_tag/enabled":
+			if explicit_tag_enabled != DEFAULT_EXPLICIT_TAG_ENABLED:
+				return true
+		"explict_tag/number":
+			if explicit_tag_number != DEFAULT_EXPLICIT_TAG_NUMBER:
+				return true
+	return false
+
+
+func property_get_revert(name):
+	match name:
+		"explict_tag/enabled":
+			return DEFAULT_EXPLICIT_TAG_ENABLED
+		"explict_tag/number":
+			return DEFAULT_EXPLICIT_TAG_NUMBER
+	return null
