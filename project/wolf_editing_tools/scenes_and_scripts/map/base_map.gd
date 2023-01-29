@@ -103,6 +103,8 @@ func to_uwmf() -> String:
 				if plane_map[position.y][position.x] == null:
 					plane_map[position.y][position.x] = {}
 				plane_map[position.y][position.x]["tile"] = tile_to_index[uwmf_block]
+				if child.explicit_tag_enabled:
+					plane_map[position.y][position.x]["tag"] = child.explicit_tag_number
 			else:
 				return_value += uwmf_block
 	# …then, convert the plane_map to UWMF.
