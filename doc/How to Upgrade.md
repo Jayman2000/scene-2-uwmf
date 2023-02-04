@@ -64,5 +64,9 @@ Git CMD or Git Bash window.
 6. If running that command opened up a text editor, save the file and then exit
 out of the editor. See the previous tips about Vi for more information.
 
+7. Update any submodules:
+
+		git submodule update --init --recursive
+
 [exit vi]: https://stackoverflow.com/questions/11828270/how-do-i-exit-vim
 [git default editor]: https://stackoverflow.com/questions/2596805/how-do-i-make-git-use-the-editor-of-my-choice-for-editing-commit-messages
