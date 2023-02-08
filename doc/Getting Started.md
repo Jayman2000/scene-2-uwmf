@@ -68,7 +68,25 @@ CMD or Git Bash window.
 	5. Choose “project.godot” (select it and then click “Open”).
 	6. Click “Import & Edit”.
 
-3. Extract the graphics from the game that you’re creating a level for:
+3. Open the Graphics Extractor
+(`res://wolf_editing_tools/scenes_and_scripts/graphics_extractor.tscn`):
+
+	1. In [Godot’s FileSystem dock][editor vocab], open the
+	`res://wolf_editing_tools/scenes_and_scripts/` directory:
+
+		1. Find the `wolf_editing_tools` directory.
+		2. Click on the arrow that’s to the left of the
+		`wolf_editing_tools` directory. It should change from pointing
+		to the right to pointing down.
+		3. Find the `scenes_and_scripts` directory.
+		4. Click on the arrow that’s to the left of the
+		`scenes_and_scripts` directory. It should change from pointing
+		to the right to pointing down.
+
+	2. In [Godot’s FileSystem dock][editor vocab], double click on
+	`graphics_extractor.tscn`
+
+4. Extract the graphics from the game that you’re creating a level for:
 
 	1. In [Godot’s playtest buttons][editor vocab], click on the triangular Play
 	button. (Hint: if Godot’s test window freezes, then you may have
