@@ -57,7 +57,6 @@ _global_script_class_icons={
 [application]
 
 config/name="Scene 2 UWMF"
-run/main_scene="res://wolf_editing_tools/scenes_and_scripts/graphics_extractor.tscn"
 config/icon="res://icon.webp"
 
 [physics]
