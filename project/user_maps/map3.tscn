@@ -34,6 +34,8 @@
 [ext_resource path="res://wolf_editing_tools/generated/art/walls/VSWAP.WL6/WODHTLR2.tex" type="Texture" id=32]
 
 [node name="Cognitive" instance=ExtResource( 1 )]
+internal_name = "MAP03"
+automap_name = "MAP03"
 api_version = 0
 
 [node name="Tile" parent="." index="0" instance=ExtResource( 2 )]
