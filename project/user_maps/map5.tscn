@@ -12,9 +12,9 @@
 [ext_resource path="res://wolf_editing_tools/generated/art/walls/VSWAP.WL6/GRYMAPS1.tex" type="Texture" id=10]
 [ext_resource path="res://wolf_editing_tools/generated/art/walls/VSWAP.WL6/GRYVENT2.tex" type="Texture" id=11]
 
-[node name="Map4" instance=ExtResource( 1 )]
-internal_name = "MAP04"
-automap_name = "MAP04"
+[node name="Map5" instance=ExtResource( 1 )]
+internal_name = "MAP05"
+automap_name = "MAP05"
 api_version = 1
 
 [node name="Tile2" parent="." index="0" instance=ExtResource( 2 )]
