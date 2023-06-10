@@ -2414,6 +2414,7 @@ custom_uwmf_properties = {
 "arg2": 300,
 "arg3": 0,
 "arg4": 0,
-"playerUse": true
+"playerUse": true,
+"repeatable": true
 }
 action_number = 1
